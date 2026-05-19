@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://weather.dev.localhost:17115;http://weather.dev.localhost:15111",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "https://localhost:21268",
+        "ASPIRE_DASHBOARD_MCP_ENDPOINT_URL": "https://localhost:23087",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "https://localhost:22276"
+      }
+    },
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://weather.dev.localhost:15111",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "http://localhost:19262",
+        "ASPIRE_DASHBOARD_MCP_ENDPOINT_URL": "http://localhost:18088",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "http://localhost:20055"
+      }
+    }
+  }
+}

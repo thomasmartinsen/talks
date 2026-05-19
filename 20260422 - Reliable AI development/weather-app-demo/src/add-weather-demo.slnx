@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="frontend/frontend.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="Weather.AppHost/Weather.AppHost.csproj" />
+  <Project Path="Weather.Server/Weather.Server.csproj" />
+</Solution>

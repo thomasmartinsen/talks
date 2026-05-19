@@ -1,0 +1,5 @@
+{
+    "appHost": {
+        "path": "src\\WeatherApp.AppHost\\WeatherApp.AppHost.csproj"
+    }
+}

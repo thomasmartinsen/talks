@@ -1,0 +1,46 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - group "Color theme selection" [ref=e6]:
+      - generic [ref=e7]: Color theme
+      - button "Use light mode" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Light
+        - generic [ref=e10]: Use light mode
+      - button "Use dark mode" [active] [pressed] [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Dark
+        - generic [ref=e13]: Use dark mode
+    - generic [ref=e14]:
+      - link "Visit Aspire website (opens in new tab)" [ref=e15] [cursor=pointer]:
+        - /url: https://aspire.dev
+        - img "Aspire logo" [ref=e16]
+      - heading "Aspire Starter" [level=1] [ref=e17]
+      - paragraph [ref=e18]: Modern distributed application development
+  - main [ref=e19]:
+    - region "Weather Forecast" [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - heading "Weather Forecast" [level=2] [ref=e23]
+          - generic [ref=e24]:
+            - group "Temperature unit selection" [ref=e25]:
+              - generic [ref=e26]: Temperature unit
+              - button "Fahrenheit" [pressed] [ref=e27] [cursor=pointer]:
+                - generic [ref=e28]: °F
+                - generic [ref=e29]: Fahrenheit
+              - button "Celsius" [ref=e30] [cursor=pointer]:
+                - generic [ref=e31]: °C
+                - generic [ref=e32]: Celsius
+            - button "Refresh weather forecast" [ref=e33] [cursor=pointer]:
+              - img [ref=e34]
+              - generic [ref=e36]: Refresh
+        - alert [ref=e37]:
+          - img [ref=e38]
+          - generic [ref=e40]: "HTTP error! status: 500"
+  - contentinfo [ref=e41]:
+    - navigation "Footer navigation" [ref=e42]:
+      - link "Learn more about Aspire (opens in new tab)" [ref=e43] [cursor=pointer]:
+        - /url: https://aspire.dev
+        - text: Learn more about Aspire
+        - generic [ref=e44]: (opens in new tab)
+      - link "View Aspire on GitHub (opens in new tab)" [ref=e45] [cursor=pointer]:
+        - /url: https://github.com/dotnet/aspire
+        - img [ref=e46]
+        - generic [ref=e47]: GitHub
