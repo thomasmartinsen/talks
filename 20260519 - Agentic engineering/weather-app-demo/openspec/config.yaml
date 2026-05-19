@@ -1,0 +1,34 @@
+schema: spec-driven
+context: |
+  Repository purpose: Aspire-based weather demo for agent-driven development workflows.
+
+  Active projects are under src/:
+  - src/frontend (React 19, TypeScript 5, Vite 7, ESLint 9)
+  - src/WeatherApp.Server (ASP.NET Core 10 minimal API)
+  - src/WeatherApp.AppHost (.NET Aspire orchestration)
+  - src/WeatherApp.slnx
+
+  Runtime architecture:
+  - Frontend calls backend using relative /api routes.
+  - Backend serves /api/weatherforecast and uses Redis output caching.
+  - AppHost orchestrates frontend, server, and Redis.
+  - OpenTelemetry and default health endpoints are enabled through shared service defaults in src/WeatherApp.Server/Extensions.cs.
+
+  Working conventions:
+  - Keep changes small and focused for a demo-sized codebase.
+  - Do not introduce large architecture patterns or major dependencies unless explicitly requested.
+  - Preserve minimal API style in the backend and existing frontend stack/style unless the task asks for redesign.
+  - Keep API route patterns under /api and update frontend/backend contract together when changing response shapes.
+  - Never hardcode secrets or credentials.
+
+rules:
+  proposal:
+    - Align with current repository structure; do not assume clean-architecture layers that are not present.
+    - State impacted project(s) under src/ explicitly.
+    - Include API contract impact and AppHost/Redis impact when backend behavior changes.
+  spec:
+    - Use concrete file paths and symbols from this repository.
+    - Keep language pragmatic and concise for this demo context.
+  tasks:
+    - "Include validation steps relevant to touched area (frontend: npm run lint/build, backend/integration: dotnet build src/WeatherApp.slnx)."
+    - Prefer incremental tasks over broad refactors.
